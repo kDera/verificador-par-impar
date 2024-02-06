@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verificador Par ou Ímpar</title>
+</head>
+<body>
+
+<h2>Verificador Par ou Ímpar GPT</h2>
+
+<input type="number" id="numero" placeholder="Digite um número inteiro">
+<button onclick="verificarParOuImpar()">Verificar</button>
+
+<p id="resultado"></p>
+
+<script>
+function verificarParOuImpar() {
+    // Obtendo o valor digitado pelo usuário
+    var numero = parseInt(document.getElementById("numero").value);
+
+    // Verificando se o número é par ou ímpar
+    if (numero % 2 === 0) {
+        document.getElementById("resultado").innerText = "O número " + numero + " é par.";
+    } else {
+        document.getElementById("resultado").innerText = "O número " + numero + " é ímpar.";
+    }
+}
+</script>
+
+</body>
+</html>
