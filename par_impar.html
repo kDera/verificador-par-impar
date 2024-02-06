@@ -6,23 +6,24 @@
 <title>Comparador de número: Par ou Impar</title>
 </head>
 <body> 
+
 <h2>comparador</h2>
 <input type="number" id="resultAtual" placeholder="Digite um numero">
 <button onclick="parImpar()">Verificar</button>  
         
-<p id="Resultado"> </p>
+<p id="resultado"></p>
 
 
 <script>
 
 function parImpar(){
-    var resultAtual = parseInt(document.getElementById("resulAtual").value);
+    var resultAtual = parseInt(document.getElementById("resultAtual").value);
 
     if(resultAtual % 2 === 0){
         document.getElementById("resultado").innerText = "o numero "+ resultAtual+"é PAR";
     }
     else{
-        document.getElementById("resultado").innerText = "o numero é IMPAR";
+        document.getElementById("resultado").innerText = "o numero é "+ resultAtual+" IMPAR";
     }
 
 }
