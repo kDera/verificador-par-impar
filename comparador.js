@@ -1,14 +1,13 @@
-const resultPadrao = 0;
-let qqq = resultPadrao ;
 
 function parImpar(){
-    qqq = parseInt(document.getElementById("numero").value);
+    var resultAtual = parseInt(document.getElementById("resultAtual").value);
 
-    if(qqq % 2 == 0){
-        document.getElementById("resultado").innerText = "o numero é PAR"
+    if(resultAtual % 2 === 0){
+        document.getElementById("resultado").innerText = "o numero "+ resultAtual+"é PAR";
     }
     else{
-        document.getElementById("resultado").innerText = "o numero é IMPAR"
+        document.getElementById("resultado").innerText = "o numero é "+ resultAtual+" IMPAR";
     }
 
 }
+
